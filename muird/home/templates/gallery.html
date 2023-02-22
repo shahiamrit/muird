@@ -1,64 +1,10 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              About Us
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="/about">About IRD</a></li>
-                <li><a class="dropdown-item" href="/iru">IRU</a></li>
-                <li><a class="dropdown-item" href="/vmgo">VMC</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Publication and Research
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Journal</a></li>
-              <li><a class="dropdown-item" href="#">Publication</a></li>
-            </ul>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Downloads</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="/gallery">Gallary</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Policy Document</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Notice</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
-          </li>
-        </ul>
-      
-      </div>
-    </div>
-  </nav>
-
- <br>
+<!-- navbar -->
+{% include 'navbar.html' %}
  <div class="container-fluid">
-      <h5>Online Meeting Images</h5>
+      <h5 style="text-decoration: bold;">Images</h5>
       <br>
 	<div class="row">
         {% for i in data %}
